@@ -1,5 +1,6 @@
 <template lang="pug">
-.header  
+.header
+  .title Find Your Favorite Food
 </template>
 
 <script>
