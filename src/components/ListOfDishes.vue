@@ -30,7 +30,7 @@ export default {
   .foodType {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 323px;
     height: 87px;
     margin-left: 20px;
@@ -44,15 +44,21 @@ export default {
 
   }
 
+  .foodType:nth-child(2) .foodName {
+    margin-left: -71px;
+
+  }
+
   .foodImage {
     margin-top: 11px;
+    margin-left: 10px;
   }
 
   .foodName {
     display: block;
     height: 20px;
     margin-top: 25px;
-    top: calc(50% - 20px/2 - 101px);
+    margin-left: -41px;
     font-family: BentonSans Medium;
     font-style: normal;
     font-weight: bold;
@@ -62,6 +68,7 @@ export default {
     text-align: left;
 
   }
+
 
   .subFood {
     height: 14px;
@@ -79,6 +86,7 @@ export default {
   .foodPrice {
     height: 29px;
     margin-top: 29px;
+    margin-right: 20px;
     top: calc(50% - 29px/2 - 92.5px);
     font-family: BentonSans Bold;
     font-weight: bold;
