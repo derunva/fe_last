@@ -1,18 +1,18 @@
 <template lang="pug">
     .container
-        ListOfDishes(v-for="food in foodList" :item="food")
+        Dish(v-for="food in foodList" :item="food")
 </template>
 
 <script>
 // @ is an alias to /src
 
-import ListOfDishes from '@/components/ListOfDishes.vue'
+import Dish from '@/components/Dish.vue'
 import { mapState } from 'vuex'
 
 export default {
   name: 'Menu',
   components: {
-    ListOfDishes
+    Dish
   },
   computed: {
     ...mapState(['foodList'])
