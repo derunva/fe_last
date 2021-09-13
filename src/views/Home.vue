@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <LoadPage/>
+    <!-- <LoadPage v-if="isLoading"></LoadPage> -->
+    <h1>Hello world!</h1>
+
   </div>
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import LoadPage from '@/components/LoadPage.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    LoadPage
   }
 }
 </script>
+<style media="screen">
+#app {
+
+  /* align-items: flex-start; */
+  padding: 0px;
+  width: 375px;
+  height: 812px;
+  /* border: 1px solid red; */
+  background-color: green;
+  
+}
+</style>
