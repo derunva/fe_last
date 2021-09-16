@@ -31,18 +31,13 @@ export default {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    width: 323px;
-    height: 87px;
     margin-left: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(90, 108, 234, 0.07);
     border-radius: 22px;
   }
 
-  .foodType:first-child  {
-    margin-top: 160px;
 
-  }
 
   .foodType:nth-child(2) .foodName {
     margin-left: -71px;
