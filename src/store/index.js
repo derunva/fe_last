@@ -27,6 +27,27 @@ export default new Vuex.Store({
           subname: "Noodle Home",
           price: "$15",
         },
+        {
+          id: 4,
+          img: '/img/icons/1.png',
+          name: "Herbal Pancake",
+          subname: "Warung Herbal",
+          price: "$7",
+        },
+        {
+          id: 5,
+          img: '/img/icons/2.png',
+          name: "Fruit Salad",
+          subname: "Wijie Resto",
+          price: "$5",
+        },
+        {
+          id: 6,
+          img: '/img/icons/3.png',
+          name: "Green Noddle",
+          subname: "Noodle Home",
+          price: "$15",
+        },
       ],
   },
   mutations: {
