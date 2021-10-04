@@ -1,6 +1,9 @@
 <template lang="pug">
+  .mainCointainer
+    .header
     .container
         Dish(v-for="food in foodList" :item="food")
+    .footer
 </template>
 
 <script>
@@ -21,22 +24,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .mainCointainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    background-image: url(../../public/img/icons/fon.jpg);
+    
+  }
+
+  .header {
+    width: 335px;
+    height: 190px;
+    border: solid black;
+  }
+
   .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 375px;
     height: 280px;
-    padding-top: 100px;
     padding-bottom: 25px;
     overflow-y: scroll;
-    background-image: url(../../public/img/icons/fon.jpg);
+    
     
 
   }
 
   .container::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
+
+  .footer {
+    width: 355px;
+    height: 74px;
+    border: solid black;
+  }
 
 
   
